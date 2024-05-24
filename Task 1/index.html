@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <img src="image/logo.png" alt="logo" id="logo">
+        
+        <!-- menu -->
+        <ul id="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myHome(this)">Home</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myAbout(this)">About</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myServices(this)">Services</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myContact(this)">Contact</a></li>
+        </ul>
+
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </nav>
+
+
+    <!-- home -->
+    <section id="home">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam incidunt dignissimos sapiente! Dolorem corrupti harum tenetur nulla. Nesciunt quo blanditiis vel in sapiente natus voluptates ratione adipisci dolores facere pariatur eius, cupiditate harum velit quibusdam, veniam id eum aliquam? Temporibus atque dicta ea culpa consectetur dolorum, pariatur obcaecati vero sit rerum blanditiis beatae amet nihil esse nam exercitationem consequatur dolores eius corporis odit quaerat nemo porro laborum? Eveniet officia sequi sunt voluptates consequatur quisquam id minima nisi nulla, illo, saepe facere, et praesentium molestiae quam dicta in cupiditate hic ipsum adipisci dolorem temporibus. Placeat dolorum iure fugiat! Quas, sapiente. Eius vero perferendis numquam qui officiis dolorum earum, magnam, eum consectetur ea provident magni? Optio doloribus, earum dignissimos pariatur veniam cumque, minus dolor, corrupti tempore nobis dolorum. Explicabo saepe fugit deserunt ullam odio in libero tempora excepturi ad aspernatur praesentium vitae, ab nulla ea est. Delectus dolores in praesentium. Saepe quaerat iure nulla ullam aspernatur tenetur vero ad, dolores eius veniam nemo architecto sapiente, harum, temporibus consequatur sunt repellat rerum dolor illo suscipit quibusdam. Totam reprehenderit iure at sunt, voluptatem optio officiis aliquam eligendi voluptas illo repellendus quidem quos dolorem est impedit quisquam qui fugit iste placeat aliquid laboriosam. Nostrum magnam id accusantium in architecto deserunt possimus, commodi dolores iure ab eveniet mollitia nemo quae quidem blanditiis nesciunt ipsa, dicta, et nisi ex porro labore dolore. Distinctio doloribus laudantium blanditiis necessitatibus minus. Non, nemo a delectus nobis, et, tempore culpa quos quam ducimus sit obcaecati laudantium. Nulla pariatur quo libero veniam consectetur, harum optio distinctio iure officia? Laborum accusantium aut, quis a dicta quos libero impedit sunt deleniti magnam eum quia alias ad fugit vero quibusdam placeat animi reprehenderit tenetur? Assumenda, sunt placeat. Exercitationem voluptate nisi ut eius, incidunt alias optio, veritatis quos quaerat vero numquam dolorem omnis doloribus maxime.</p>
+    </section>
+
+
+    <!-- about -->
+    <section id="about">
+        <h1 class="heading">About</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatum doloremque libero, nesciunt repellendus repellat. Nam eos, provident quae quisquam voluptatibus est illum dicta debitis ea exercitationem laudantium explicabo, ratione et temporibus dolorem alias pariatur sint possimus quod minus! Hic excepturi quo nisi exercitationem facilis odio inventore distinctio architecto dolorum at itaque, pariatur illo consequatur iste corporis illum sed debitis modi nostrum, nihil voluptatum atque similique. Vitae nobis, delectus quod odit totam eius voluptas perferendis deleniti, quo nesciunt eos magni dolorum praesentium. Iusto, nihil rerum autem quod aspernatur ullam eum vero est harum laboriosam numquam nemo corrupti saepe id expedita animi? Illum consequuntur libero voluptate. Distinctio rem id, minima quam magnam voluptatem repudiandae animi aliquam vel fugit porro fugiat illum voluptas omnis ratione unde, nihil officia necessitatibus! At, qui expedita aliquam aut ratione, laudantium illum, cumque quos eos vel totam ex sequi deserunt quis praesentium molestiae quod veritatis amet! Exercitationem, aliquam dicta est sunt facilis consequatur illo molestias, porro commodi quasi eaque? Neque fuga vel a optio consectetur eum praesentium sapiente nostrum repellat nemo voluptate cupiditate odit, labore impedit odio temporibus, est expedita quo cumque voluptates quaerat atque unde! Voluptatum iusto tempora quia. Obcaecati consequuntur, magni eum optio error repellendus?</p>
+    </section>
+
+
+    <!-- services -->
+    <section id="services">
+        <h1 class="heading">Services</h1>
+        <ul id="service">
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        </ul>
+    </section>
+    
+
+    <!-- contact -->
+    <section id="contact">
+        <h1 class="heading">Get in touch</h1>
+
+        <ul>
+            <li><a href="malito:abc123@gmail.com" id="mail" onmouseover="mailOver(this)" onmouseout="mailOut(this)">Send Email</a></li>
+            <li><img src="Image/phone-solid.svg" alt="phone" height="15" style="margin-right: 5px;"> +45272582</li>
+            <li><img src="Image/location-dot-solid.svg" alt="location" height="16" style="margin-right: 5px;">86 adgs, BIHAR, India</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p id="center">&copy; 2023 BIHAR India</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
